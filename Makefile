@@ -15,3 +15,8 @@ lib/libc.a: lib libc/libc.a
 
 libc/libc.a:
 	make -C libc
+
+clean:
+	make -C libc clean
+	make -C libfxcg clean
+	rm -rf lib
